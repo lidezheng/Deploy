@@ -122,3 +122,5 @@ def deploy(version=None):
 # && fab -f course_deploy.py local_pack:version=$tag
 # && fab -f course_deploy.py deploy:version=$tag
 # && fab -f course_deploy.py local_clean:version=$tag;
+
+# 或者: fab -f course_deploy.py local_pack:version=$tag deploy:version=$tag local_clean:version=$tag
