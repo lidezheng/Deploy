@@ -100,8 +100,9 @@ def rollback():
     pass
 
 
-# 并行执行任务
-@parallel
+# 默认值串行部署
+# 并行执行任务, 并发池最大20
+@parallel(pool_size=20)
 def deploy(version=None):
     """部署"""
     if not version:
